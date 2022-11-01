@@ -6,9 +6,11 @@ spring:
   application:
     name: first-service
 
+# eureka-client setting
+# eureka 라이브러리가 포함된 채 spring이 실행될 때
 eureka:
   client:
+    # 자신에게 등록하는 의미없는 작업이기 때문에 false
     register-with-eureka: false
-    # Eureka 서버로부터 객체의 정보를 주기적으로 가져올 것인지 속성
-    # True, 갱신된 정보를 받겠다.
+    # 자신에게 등록하는 의미없는 작업이기 때문에 false
     fetch-registry: false
